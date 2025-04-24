@@ -1,0 +1,4 @@
+{
+    "query": "SELECT DATEPART(HOUR, Timestamp) AS Hour, Value, Value2, Value3 FROM SensorData ORDER BY Hour;"
+  }
+  

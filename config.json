@@ -1,4 +1,8 @@
 {
-    "query": "SELECT DATEPART(HOUR, Timestamp) AS Hour, Value, Value2, Value3 FROM SensorData ORDER BY Hour;"
-  }
-  
+  "server": "LPT-PLATIS\\MySQL",
+  "database": "SensorData",
+  "username": "sa1",
+  "password": "123",
+  "push_gateway_url": "http://localhost:9091",
+  "query": "SELECT DATEPART(HOUR, Timestamp) AS Hour, Value, Value2, Value3 FROM SensorData ORDER BY Hour;"
+}

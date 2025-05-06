@@ -6,14 +6,12 @@ import json
 with open('config.json', 'r') as f:
     config = json.load(f)
 
+server = config["server"]
+database = config["database"]
+username = config["username"]
+password = config["password"]
+push_gateway_url = config["push_gateway_url"]
 query = config["query"]
-
-server = 'LPT-PLATIS\\MySQL'
-database = 'SensorData'
-username = 'sa1'
-password = '123'
-
-push_gateway_url = 'http://localhost:9091'
 
 conn = pyodbc.connect(f'DRIVER={{ODBC Driver 17 for SQL Server}};'
                       f'SERVER={server};'
